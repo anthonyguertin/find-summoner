@@ -1,0 +1,11 @@
+{
+  "name": "summoner-match",
+  "version": "1.0.0",
+  "description": "Find league of legends summoners",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "anthony guertin",
+  "license": "ISC"
+}
