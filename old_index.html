@@ -1,5 +1,18 @@
-<html>
 <head>
+    <style>
+        #btnViewAdvancedDetails {
+            position: absolute;
+            height: 13px;
+            color: rgb(145, 82, 23);
+            font-size: 14px;
+            text-decoration: underline;
+            top: 48.16%;
+            left: 5.06%;
+            width: 26.65%;
+            cursor: pointer;
+            text-align: center;
+        }
+    </style>
     <style></style>
     <style>
         #result-list {
@@ -9,10 +22,10 @@
             font-size: 12px;
             margin: 0px;
             padding: 0px;
-            height: 191px;
             top: 23.88%;
             left: 5%;
             width: 26%;
+            height: 22.82%;
         }
     </style>
     <style></style>
@@ -23,7 +36,7 @@
             width: 77px;
             top: 18%;
             left: 32%;
-            height: 3.2%;
+            height: 26px;
         }
     </style>
     <style></style>
@@ -50,8 +63,8 @@
             height: 23px;
             left: 2%;
             margin-left: 3%;
-            top: 16%;
             width: 17.34%;
+            top: 15%;
         }
     </style>
     <style>
@@ -60,8 +73,8 @@
             margin-left: 3%;
             left: 2%;
             top: 18%;
-            height: 3.2%;
             width: 26.34%;
+            height: 26px;
         }
     </style>
 </head>
@@ -72,12 +85,25 @@
     <div id="div1121235929956">Find Summoner by User Name
     </div>
 
-    <form action='/summoner-by-name' method='GET'>
-        <input id="summoner_name" name="summoner_name" type="text" value={{name}} />
-        <input type="submit" id='btnFindSummoner' value="Submit" />
+
+    <ul id="list112201157334" style="pointer-events: auto;">
+
+
+    </ul>
+    <ul id="list11220125386">
+
+
+    </ul>
+    <form action="/summoner-by-name" method="GET">
+        <input id="summoner_name" name="summoner_name" type="text">
+        <input type="submit" id="btnFindSummoner" value="Submit">
     </form>
-{{{body}}}
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src='/js/index.js' type='text/javascript'></script>
+    <ul id="result-list">
+        <li id="summoner-id-result"></li>
+        <li id="summoner-name-result" style="margin-left: 1px; margin-top: -2px;"></li>
+        <li id="summoner-level"></li>
+    </ul>
+
+    <div id="btnViewAdvancedDetails">View Advanced Details
+    </div>
 </body>
-</html>

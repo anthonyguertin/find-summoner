@@ -17,8 +17,7 @@ app.set('view engine', 'handlebars');
 var routes = require('./routes/summoner.js')(app);
 
 app.get('/', function(req,res){
-    res.send('./index.html');
-    res.sendStatus(200);
+    res.render('index')
 });
 
 app.listen(3000, 'localhost');

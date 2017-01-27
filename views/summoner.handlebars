@@ -1,3 +1,17 @@
+     <style>
+        #btnViewAdvancedDetails {
+            position: absolute;
+            height: 13px;
+            color: rgb(145, 82, 23);
+            font-size: 14px;
+            text-decoration: underline;
+            top: 48.16%;
+            left: 5.06%;
+            width: 26.65%;
+            cursor: pointer;
+            text-align: center;
+        }
+    </style>
  <!--
     <span id="summonerData">
 
@@ -13,8 +27,10 @@
     </span>
 -->
     <ul id="result-list">
-        <li id="summoner-id-result">{{id}}</li>
-        <li id="summoner-name-result" style="margin-left: 1px; margin-top: -2px;">{{name}}</li>
-        <li id="summoner-level" <="" ul="">
-        </li>
+        <li id="summoner-id-result"><b>ID:</b><span id='summoner-id' name='summoner-id'>{{id}}</span></li>
+        <li id="summoner-name-result" style="margin-left: 1px; margin-top: -2px;"><b>Name: </b><span>{{name}}</span></li>
+        <li id="profile-icon-id" style="margin-left: 1px; margin-top: -2px"> <b>Profile Icon ID: </b><span>{{profileIconId}}</span></li>
+        <li id="summoner-level"  style="margin-left: 1px; margin-top: -2px"> <b>Summoner level: </b><span>{{summonerLevel}}</span></li>
+        <li id="revision-date"><b>Last Modified: </b><span>{{revisionDate}}</span></li>
     </ul>
+    <div id="btnViewAdvancedDetails">View Advanced Details</div>
