@@ -41,7 +41,7 @@ module.exports = function(app) {
         var options = 
         {
             "Content-Type": "application/json",
-            "url": "https://na.api.pvp.net/api/lol/na/v1.3/stats/by-summoner/" + summoner_id + "/summary?season=SEASON2016&api_key=RGAPI-e935b707-0a8a-4c2d-a4a0-840477812e08"
+            "url": "https://na.api.pvp.net/api/lol/na/v1.3/stats/by-summoner/" + summoner_id + "/summary?season=SEASON2016&api_key="
         }
 
         request.get(options, function(err, httpResponse, body) {
